@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <Deterministic>true</Deterministic>
+    <IsAotCompatible>true</IsAotCompatible>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <AnalysisLevel>latest</AnalysisLevel>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+  </PropertyGroup>
+
+  <!-- NuGet package identity (local feed; eventually its own GitHub repo). -->
+  <PropertyGroup>
+    <PackageId>Schipper.Io.Ansi</PackageId>
+    <Version>0.1.0-dev</Version>
+    <Authors>Schipper</Authors>
+    <Company>SCHIPPER.IO LLC</Company>
+    <Product>Schipper.Io.Ansi</Product>
+    <Description>Zero-dependency ANSI/terminal primitives: color, CP437, screen buffer with diffing, ANSI/SAUCE parsing, input decoding, and CP437 box/block glyphs.</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>
